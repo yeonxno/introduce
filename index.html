@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양연호의 자기소개</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter & Playfair Display for editorial vibe) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-[#faf9f6] text-zinc-900 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navigation (카드 형태를 배제한 플랫하고 슬림한 상단 바) -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#faf9f6]/90 border-b border-zinc-200/60">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-lg font-bold tracking-wider text-zinc-900">YeonHo.Yang</span>
+            <nav class="flex space-x-8 text-xs font-semibold tracking-widest text-zinc-500 uppercase">
+                <a href="#about" class="hover:text-zinc-900 transition-colors">01. About</a>
+                <a href="#hobbies" class="hover:text-zinc-900 transition-colors">02. Hobbies</a>
+                <a href="#skills" class="hover:text-zinc-900 transition-colors">03. Skills</a>
+                <a href="#projects" class="hover:text-zinc-900 transition-colors">04. Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-16 md:py-24 space-y-32 w-full">
+        
+        <!-- 1. 자기소개 섹션 (Asymmetric Split Layout) -->
+        <section id="about" class="scroll-mt-28">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+                
+                <!-- 왼쪽: 프로필 이미지 및 에디토리얼 텍스트 (5칸) -->
+                <div class="md:col-span-5 space-y-6">
+                    <div class="relative group">
+                        <!-- 이미지 배경 데코 라인 -->
+                        <div class="absolute -inset-3 border border-zinc-300 rounded-none pointer-events-none transition-transform duration-300 group-hover:scale-[1.02]"></div>
+                        <!-- 프로필 이미지 -->
+                        <div class="relative aspect-square overflow-hidden bg-zinc-100 border border-zinc-900">
+                            <img src="image/my.jpg" alt="홍길동 프로필 이미지" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                    </div>
+                    <div class="pt-4 flex items-center justify-between text-xs text-zinc-400 font-mono">
+                        <span>EST. 2026</span>
+                        <span>SEOUL, KOREA</span>
+                    </div>
+                </div>
+
+                <!-- 오른쪽: 헤드라인 및 긴 소개 글 (7칸) -->
+                <div class="md:col-span-7 md:pl-6 space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold tracking-widest text-zinc-400 uppercase block">01 / Introduction</span>
+                        <h1 class="text-3xl md:text-5xl font-light tracking-tight text-zinc-900 leading-tight">
+                            안녕하세요. <br>
+                            AI/AX 엔지니어를 목표로 공부하고 있는 <br>
+                            <span class="font-extrabold border-b-2 border-zinc-900 pb-1">양연호</span>입니다.
+                        </h1>
+                    </div>
+                    
+                    <div class="h-[1px] bg-zinc-200 w-24"></div>
+
+                    <p class="text-zinc-600 text-base md:text-lg leading-relaxed font-light">
+                        인공지능 기술(AI)과 인공지능 전환(AX) 가치를 유기적으로 연결하여, 우리가 매일 마주하는 작은 불편함부터 복잡한 비즈니스 프로세스까지 똑똑하게 혁신하는 소프트웨어를 만듭니다. <br><br>
+                        견고하고 안정적인 백엔드 시스템 설계를 기반으로, 단순한 코드 작성을 넘어 비즈니스와 사용자가 원클릭으로 만족할 수 있는 실질적인 지능형 솔루션을 제안하는 개발자가 되고자 끊임없이 연마하고 있습니다.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. 취미 섹션 (Minimalist List Layout) -->
+        <section id="hobbies" class="scroll-mt-28 border-t border-zinc-200 pt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- 섹션 타이틀 -->
+                <div class="md:col-span-4">
+                    <span class="text-xs font-bold tracking-widest text-zinc-400 uppercase block mb-2">02 / Hobbies</span>
+                    <h2 class="text-2xl font-bold text-zinc-900 tracking-tight">나의 일상과 기록</h2>
+                    <p class="text-xs text-zinc-400 mt-2">개발 외의 시간에 감성을 채우고 생각을 정리하는 조용한 움직임들.</p>
+                </div>
+
+                <!-- 가로 라인 형태의 리스트 목록 (카드 제거) -->
+                <div class="md:col-span-8 divide-y divide-zinc-200">
+                    <!-- 취미 1 -->
+                    <div class="py-6 flex justify-between items-start gap-6 group hover:pl-2 transition-all">
+                        <div class="space-y-2">
+                            <span class="text-xs font-mono text-zinc-400 block">01. CULTURE</span>
+                            <h3 class="font-bold text-lg text-zinc-800">OTT 드라마 & 영화 보기</h3>
+                            <p class="text-sm text-zinc-500 leading-relaxed">다양한 장르의 세계적인 콘텐츠를 분석하며 감상합니다. 복잡하게 얽힌 스토리라인과 최신 영상 연출 기법을 관찰하며 새로운 영감과 창의적인 문제 해결 능력을 얻습니다.</p>
+                        </div>
+                        <div class="p-2 bg-zinc-100 text-zinc-600 rounded-none group-hover:bg-zinc-950 group-hover:text-white transition-colors">
+                            <i data-lucide="tv" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <!-- 취미 2 -->
+                    <div class="py-6 flex justify-between items-start gap-6 group hover:pl-2 transition-all">
+                        <div class="space-y-2">
+                            <span class="text-xs font-mono text-zinc-400 block">02. REFRESH</span>
+                            <h3 class="font-bold text-lg text-zinc-800">공원에서 산책하기</h3>
+                            <p class="text-sm text-zinc-500 leading-relaxed">복잡한 알고리즘이나 설계 도중 막히는 지점이 생길 때 푸른 공원을 느리게 걷습니다. 자연 속에서 머릿속을 맑게 정리하며 해결의 실마리와 깊은 집중력을 충전합니다.</p>
+                        </div>
+                        <div class="p-2 bg-zinc-100 text-zinc-600 rounded-none group-hover:bg-zinc-950 group-hover:text-white transition-colors">
+                            <i data-lucide="footprints" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 기술 섹션 (Typographic Bordered Grid) -->
+        <section id="skills" class="scroll-mt-28 border-t border-zinc-200 pt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- 섹션 타이틀 -->
+                <div class="md:col-span-4">
+                    <span class="text-xs font-bold tracking-widest text-zinc-400 uppercase block mb-2">03 / Technologies</span>
+                    <h2 class="text-2xl font-bold text-zinc-900 tracking-tight">관심 있는 기술 스택</h2>
+                    <p class="text-xs text-zinc-400 mt-2">백엔드 시스템 아키텍처와 미래 지향적 지능형 모듈에 초점을 둡니다.</p>
+                </div>
+
+                <!-- 보더라인으로 바둑판처럼 정렬한 기술 타일 (섀도우/카드 없음) -->
+                <div class="md:col-span-8">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-6 border-l border-zinc-200 pl-6 md:pl-8">
+                        
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-sm text-zinc-900">Java</h4>
+                            <p class="text-xs text-zinc-500">객체지향 패러다임 설계 및 기본기</p>
+                        </div>
+
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-sm text-zinc-900">Spring</h4>
+                            <p class="text-xs text-zinc-500">스프링 부트 기반 비즈니스 서버 개발</p>
+                        </div>
+
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-sm text-zinc-900">JPA</h4>
+                            <p class="text-xs text-zinc-500">객체-관계 매핑 및 최적화 쿼리 설계</p>
+                        </div>
+
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-sm text-zinc-900">RDBMS</h4>
+                            <p class="text-xs text-zinc-500">스키마 구조 설계 및 성능 튜닝</p>
+                        </div>
+
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-sm text-zinc-900">NoSQL</h4>
+                            <p class="text-xs text-zinc-500">비정형 데이터 활용 및 고속 스토리지</p>
+                        </div>
+
+                        <div class="space-y-1">
+                            <h4 class="font-bold text-sm text-zinc-900">CI/CD</h4>
+                            <p class="text-xs text-zinc-500">자동화 배포 환경 및 품질 파이프라인</p>
+                        </div>
+
+                        <div class="space-y-1 col-span-2 sm:col-span-3 pt-4 border-t border-zinc-200/60 mt-2">
+                            <span class="text-[10px] font-mono tracking-widest text-zinc-400 uppercase block mb-2">Focus on AX</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-950 text-white text-xs font-semibold tracking-wider uppercase">
+                                    AI (Artificial Intelligence)
+                                </span>
+                                <span class="px-3 py-1 bg-zinc-950 text-white text-xs font-semibold tracking-wider uppercase">
+                                    AX (AI Transformation)
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 프로젝트 섹션 (Editorial Index / Timeline Table Layout) -->
+        <section id="projects" class="scroll-mt-28 border-t border-zinc-200 pt-16">
+            <div class="space-y-8">
+                <!-- 타이틀 -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-zinc-400 uppercase block mb-2">04 / SELECTED WORKS</span>
+                        <h2 class="text-2xl font-bold text-zinc-900 tracking-tight">진행했던 프로젝트</h2>
+                    </div>
+                    <span class="text-xs text-zinc-400 font-mono">TOTAL: 03 CASE STUDIES</span>
+                </div>
+
+                <!-- 아웃라인 리스트 방식 테이블 (카드 박스 대신 로우 단위 분할) -->
+                <div class="border-t border-zinc-900 divide-y divide-zinc-200">
+                    
+                    <!-- 프로젝트 01 -->
+                    <div class="py-8 md:py-10 grid grid-cols-1 md:grid-cols-12 gap-6 group hover:bg-zinc-50/50 px-4 -mx-4 transition-all duration-300">
+                        <div class="md:col-span-2 text-xl font-light font-mono text-zinc-300 tracking-widest group-hover:text-zinc-900 transition-colors">
+                            01/
+                        </div>
+                        <div class="md:col-span-4 space-y-2">
+                            <h3 class="text-xl font-bold text-zinc-900 group-hover:underline decoration-1 underline-offset-4">비대면 스터디 및 일정관리 서비스</h3>
+                            <div class="flex gap-2">
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#Java</span>
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#Spring</span>
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#JPA</span>
+                            </div>
+                        </div>
+                        <div class="md:col-span-6 text-sm text-zinc-500 leading-relaxed font-light">
+                            원격지 스터디원들의 효율적인 몰입을 지원합니다. 실시간 출석 연동 모듈, 조율이 복잡한 캘린더 자동 정리 및 진척도 모니터링을 단일 대시보드로 일원화한 스터디 허브 시스템입니다.
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 02 -->
+                    <div class="py-8 md:py-10 grid grid-cols-1 md:grid-cols-12 gap-6 group hover:bg-zinc-50/50 px-4 -mx-4 transition-all duration-300">
+                        <div class="md:col-span-2 text-xl font-light font-mono text-zinc-300 tracking-widest group-hover:text-zinc-900 transition-colors">
+                            02/
+                        </div>
+                        <div class="md:col-span-4 space-y-2">
+                            <h3 class="text-xl font-bold text-zinc-900 group-hover:underline decoration-1 underline-offset-4">통합 웹툰 추천 서비스</h3>
+                            <div class="flex gap-2">
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#NoSQL</span>
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#AI</span>
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#AX</span>
+                            </div>
+                        </div>
+                        <div class="md:col-span-6 text-sm text-zinc-500 leading-relaxed font-light">
+                            다양하게 분산된 국내 주요 웹툰 플랫폼들의 데이터를 통합 수집·가공합니다. 유저의 독서 성향 및 장르 취향 벡터 데이터를 수집하여 머신러닝 임베딩 기반의 개인화된 1:1 추천 목록을 피드로 구성하는 AX 솔루션입니다.
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 03 -->
+                    <div class="py-8 md:py-10 grid grid-cols-1 md:grid-cols-12 gap-6 group hover:bg-zinc-50/50 px-4 -mx-4 transition-all duration-300">
+                        <div class="md:col-span-2 text-xl font-light font-mono text-zinc-300 tracking-widest group-hover:text-zinc-900 transition-colors">
+                            03/
+                        </div>
+                        <div class="md:col-span-4 space-y-2">
+                            <h3 class="text-xl font-bold text-zinc-900 group-hover:underline decoration-1 underline-offset-4">선착순 무료나눔 서비스</h3>
+                            <div class="flex gap-2">
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#Redis</span>
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#RDBMS</span>
+                                <span class="text-[10px] font-mono tracking-wider text-zinc-400">#CI/CD</span>
+                            </div>
+                        </div>
+                        <div class="md:col-span-6 text-sm text-zinc-500 leading-relaxed font-light">
+                            단시간에 대량의 트래픽이 집중되는 선착순 쿠폰 배포 시나리오를 다룹니다. 인메모리(Redis) 기반 대기열 캐싱과 정합성을 보장하는 낙관적 락 설계를 통해 동시성 병목을 제어하고 대역폭을 보장하는 초고성능 백엔드 모듈을 설계했습니다.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (미니멀 플랫 푸터) -->
+    <footer class="border-t border-zinc-200 bg-[#faf9f6] py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-400 font-mono">
+            <p>© 2026 YeonHo Yang. ALL RIGHTS RESERVED.</p>
+            <p class="tracking-wide">ENGINEERED FOR MODERN DIGITAL EXPERIENCE</p>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Rendering Script -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
